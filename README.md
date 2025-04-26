@@ -1,8 +1,7 @@
 # Traductor de Lenguaje de Señas en Tiempo Real
 
 ## Descripción
-
-El **Traductor de Lenguaje de Señas en Tiempo Real** es un proyecto en desarrollo cuyo objetivo es traducir gestos de lenguaje de señas a texto en tiempo real utilizando visión por computadora y redes neuronales. La aplicación utiliza una cámara web para capturar las imágenes y un modelo basado en MediaPipe para la detección y el seguimiento de las manos. Además, el texto traducido se muestra como subtítulos en un estilo similar a YouTube.
+**reCognition** es un proyecto en desarrollo que utiliza redes neuronales y tecnologías de visión computacional para traducir gestos de manos a texto en tiempo real. Está basado en las bibliotecas MediaPipe y OpenCV, con el objetivo de crear una experiencia de traducción de lenguaje de señas mediante gestos capturados desde la cámara.
 
 ### Funcionalidades Actuales
 - **Detección de gestos de la mano:** Utiliza un modelo de MediaPipe para detectar las manos y reconocer gestos comunes del lenguaje de señas.
@@ -51,19 +50,61 @@ El proyecto utiliza una combinación de herramientas avanzadas para lograr la de
 - **Desafíos de precisión:** La detección de manos y la interpretación de gestos son sensibles a la iluminación y al ángulo de la cámara, lo que puede afectar la precisión.
 - **No uso de redes neuronales para la clasificación:** Aunque el sistema es prometedor, la clasificación de gestos todavía no se realiza a través de redes neuronales profundas, lo que limitará su capacidad para generalizar a nuevos gestos en el futuro.
 
+
 ## Instalación
 
-Para ejecutar este proyecto en tu entorno local, sigue los siguientes pasos:
+### 1. Crea un entorno virtual:
+   
+   Para asegurarte de que todas las dependencias estén aisladas y no interfieran con otros proyectos, es recomendable crear un entorno virtual. Para hacerlo, ejecuta:
 
-### Requisitos
-
-- Python 3.x
-- Virtual Environment (virtualenv)
-- Dependencias de Python
-
-### Pasos
-
-1. **Clona el repositorio:**
    ```bash
-   git clone https://github.com/tu-usuario/lenguaje-de-senas.git
-   cd lenguaje-de-senas
+   python -m venv venv
+   ```
+
+   Luego, activa el entorno virtual:
+
+   - En Linux/Mac:
+
+     ```bash
+     source venv/bin/activate
+     ```
+
+   - En Windows:
+
+     ```bash
+     .env\Scripts\activate
+     ```
+
+### 2. Instala las dependencias:
+
+   Una vez que tengas el entorno virtual activado, instala las dependencias necesarias con el siguiente comando:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### 3. Ejecuta el proyecto:
+
+   Después de instalar las dependencias, puedes ejecutar el proyecto con:
+
+   ```bash
+   python traductor.py
+   ```
+
+## Dependencias
+
+- **mediapipe**: Biblioteca para la detección y el seguimiento de las manos.
+- **opencv-python**: Biblioteca para el procesamiento de imágenes y video.
+- **pyvirtualcam**: Permite crear una cámara virtual para videollamadas.
+- **Pillow**: Biblioteca para agregar texto y dibujar en las imágenes.
+- **numpy**: Para operaciones numéricas y manipulaciones de matrices.
+
+## Contribución
+
+Este proyecto está en constante desarrollo y se aceptan contribuciones. Si tienes alguna sugerencia o quieres ayudar a mejorar el proyecto, no dudes en hacer un pull request o abrir un issue.
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+**Nota**: Este proyecto aún está en una etapa temprana de desarrollo. Algunas funcionalidades pueden no estar completamente implementadas o ser inexactas en ciertos casos. Se están realizando esfuerzos continuos para mejorar la precisión de la detección y expandir la base de gestos soportados.
