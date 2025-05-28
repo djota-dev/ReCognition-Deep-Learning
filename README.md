@@ -1,7 +1,7 @@
 # Traductor de Lenguaje de Señas en Tiempo Real
 
 ## Descripción
-**reCognition** es un proyecto en desarrollo que utiliza redes neuronales y tecnologías de visión computacional para traducir gestos de manos a texto en tiempo real. Está basado en las bibliotecas MediaPipe y OpenCV, con el objetivo de crear una experiencia de traducción de lenguaje de señas mediante gestos capturados desde la cámara.
+**ReCognition** es un proyecto en desarrollo que utiliza redes neuronales y tecnologías de visión computacional para traducir gestos de manos a texto en tiempo real. Está basado en las bibliotecas MediaPipe y OpenCV, con el objetivo de crear una experiencia de traducción de lenguaje de señas mediante gestos capturados desde la cámara.
 
 ### Funcionalidades Actuales
 - **Detección de gestos de la mano:** Utiliza un modelo de MediaPipe para detectar las manos y reconocer gestos comunes del lenguaje de señas.
